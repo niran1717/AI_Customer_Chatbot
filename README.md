@@ -20,7 +20,7 @@ This is ideal for **customer support**, **product inquiry handling**, and **feed
 ## 🧱 Architecture Overview
 
 The architecture follows a modular, microservice pattern using serverless components.
-![Architecture Diagram](./AI_Chatbotpng)
+![Architecture Diagram](./AI_Chatbot.png)
 
 ### 🔁 Core Workflow
 
