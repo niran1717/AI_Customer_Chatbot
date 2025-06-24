@@ -126,7 +126,7 @@ The architecture follows a modular, microservice pattern using serverless compon
 
 ---
 
-## 📁 Repository Structure
+<!--## 📁 Repository Structure
 
 ```
 /ai-chatbot/
@@ -140,6 +140,7 @@ The architecture follows a modular, microservice pattern using serverless compon
 │   └── architecture.png       # System diagram
 ├── README.md
 ```
+-->
 
 ---
 
