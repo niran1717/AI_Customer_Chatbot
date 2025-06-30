@@ -76,30 +76,45 @@ The architecture follows a modular, microservice pattern using serverless compon
 
 ---
 
+### ✅ Step 7: Add logging and error handling (CloudWatch)
+![CloudWatch Alarms](./assets/Alarms.png)
+
+### ✅ Step 8: Create SNS alert if errors occur
+![SNS Topic](./assets/SNS.png)
+
+### ✅ Step 9: Create a simple HTML page or use Postman to test
+![HTML Page](./assets/Frontend.png)
+![Postman-Response 1](./assets/Postman.png)
+![Postman-Response 2](./assets/Postman_1.png)
+
+
+
 ## 📁 Folder Structure
 
 ```
 /AI_Customer_Chatbot/
 │
 ├── assets/
-│   ├── dynamodb-chat-history.png
-│   ├── iam-lambda-role.png
-│   ├── lambda-function-created.png
-│   ├── lambda-code.png
-│   ├── lambda-test-success.png
-│   ├── apigateway-created.png
-│   ├── apigateway-endpoint.png
-│   ├── bedrock-access-request.png
+│   ├── DynamoDB_Create.png
+│   ├── IAM_Roles.png
+│   ├── lambda_.png
+│   ├── test_lambda.png
+│   ├── API_Gateway.png
+│   ├── API_Stage.png
+│   ├── Frontend.png
+│   ├── Postman.png
 │   └── AI_Chatbot.png
 │
 ├── lambda/
-│   └── chatbot_handler.py       # Core chatbot logic
+│   └── lambda_function.py       # Core chatbot logic
 │
 ├── frontend/
 │   └── index.html               # Optional simple frontend
 │
 ├── terraform/
-│   └── main.tf                  # (Optional) Infrastructure as code
+    ├── variables.tf
+│   ├── main.tf
+│   └── outputs.tf                  # (Optional) Infrastructure as code
 │
 └── README.md
 ```
@@ -131,8 +146,6 @@ The architecture follows a modular, microservice pattern using serverless compon
 
 - Add authentication via Cognito (optional)
 - Add log analytics using Athena + QuickSight
-- Deploy with Terraform/CDK
-- Set up alerting and metric dashboards
 
 ---
 
