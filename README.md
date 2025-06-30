@@ -30,14 +30,14 @@ The architecture follows a modular, microservice pattern using serverless compon
 - Table name: `ChatHistory`
 - Partition key: `chat_id` (String)
 - Sort key: `timestamp` (String)
-![DynamoDB table](./assets/dynamodb-chat-history.png)
+![DynamoDB table](./assets/DynamoDB_Create.png)
 
 ---
 
 ### ✅ Step 2: Create IAM Role for Lambda
 - Role name: `lambda-chatbot-role`
 - Attach policies: `AmazonDynamoDBFullAccess`, `AmazonBedrockFullAccess`, `CloudWatchLogsFullAccess`
-![IAM Role](./assets/iam-lambda-role.png)
+![IAM Role](./assets/IAM_Roles.png)
 
 ---
 
@@ -45,8 +45,7 @@ The architecture follows a modular, microservice pattern using serverless compon
 - Runtime: Python 3.12
 - Role: `lambda-chatbot-role`
 - Paste chatbot handler code with Bedrock and DynamoDB integration
-![Lambda Created](./assets/lambda-function-created.png)
-![Lambda Code](./assets/lambda-code.png)
+![Lambda Created](./assets/lambda.png)
 
 ---
 
@@ -59,15 +58,15 @@ The architecture follows a modular, microservice pattern using serverless compon
 }
 ```
 - Expected: Claude response + DynamoDB entry
-![Lambda Test](./assets/lambda-test-success.png)
+![Lambda Test](./assets/test_lambda.png)
 
 ---
 
 ### ✅ Step 5: Create API Gateway
 - Type: HTTP API
 - Connect to Lambda trigger
-![API Gateway Created](./assets/apigateway-created.png)
-![Endpoint](./assets/apigateway-endpoint.png)
+![API Gateway Created](./assets/API_Gateway.png)
+![Stages](./assets/API_Stage.png)
 
 ---
 
